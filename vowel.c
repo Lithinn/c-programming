@@ -7,7 +7,7 @@ int main()
     if (c=='a' || c=='A' || c=='e' || c=='E' || c=='i' || c=='I' || c=='o' || c=='O' || c== 'u' || c=='U')
       printf("%c is a vowel.\n", c);
     else
-      printf("%c is a constant.\n", c);
+      printf("%c is a consonant.\n", c);
   }
   else
     printf("%c is neither a vowel nor a consonant.\n", c);
