@@ -10,6 +10,6 @@ int main()
       printf("%c is a consonant.\n", c);
   }
   else
-    printf("%c is neither a vowel nor a consonant.\n", c);
+    printf("%c is  a vowel nor a consonant.\n", c);
     return 0;
  
