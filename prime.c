@@ -1,26 +1,21 @@
-#include<stdio.h>
+
+#include <stdio.h>
 int main()
 {
-   int n, i = 3, count, c;
-   printf("Enter the prime numbers\n");
-   scanf("%d",&n);
-   if ( n >= 1 )
-   {
-    printf("%d prime numbers are :\n",n);
-    printf("2\n");
-   }
-   for ( count = 2 ; count <= n ;  )
-   {
-    for ( c = 2 ; c <= i - 1 ; c++ )
+    int n, i, flag = 0;
+    printf("Enter a positive integer: ");
+    scanf("%d",&n);
+    for(i=2; i<=n/2; ++i)
     {
-    if ( i%c == 0 )
-    break;
+     if(n%i==0)
+     {
+     flag=1;
+     break;
     }
-    if ( c == i )
-    {
-    printf("%d\n", i);
-    count++;
     }
-   i++;}
-   return 0;
+    if (flag==0)
+    printf("%d is a prime number",n);
+    else
+    printf("%d is not a prime number",n);
+    return 0;
 }
